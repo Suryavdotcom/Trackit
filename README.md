@@ -1,70 +1,207 @@
-# Getting Started with Create React App
+<!-- INTRO SECTION -->
+<br />
+<p align="center">
+  <a href="https://github.com/Jenil-Vekaria/Trackit">
+    <img src="client/src/assests/Trackit_Background.png" alt="Trackit">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Issue and Project Tracking System</h3>
 
-## Available Scripts
+  <p align="center">
+    Use Trackit! Tracking system that allows team members to collaborate, discuss and manage projects effectively 
+    <br />
+    <br />
+  </p>
+</p>
 
-In the project directory, you can run:
+<!-- FEATURE SECTION -->
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Team management
+- Project management
+- Ticket management
+- User assignment
+- Statistics
+- Searching
+- Commenting
+- Role based organization (Create custom permissions)
+- Ticket Type field (Create custom ticket type)
+- Attachments (Coming soon)
+- Change tracker (Coming soon)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TECHNOLOGY SECTION -->
 
-### `npm test`
+## 🛠️Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| **Front-end** | <p align="center"><img src="https://www.svgrepo.com/show/303500/react-1-logo.svg" width="100" height="100" /><br/> React</p>                                                                                        | <p align="center"><img src="https://avatars.githubusercontent.com/u/54212428?s=200&v=4" width="100" height="100" /><br/>Chakra UI</p>                                                                | <p align="center"><img src="https://axios-http.com/assets/logo.svg" width="100" height="100" /><br/>Axios</p>                                                          | <p align="center"><img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" width="100" height="100" /><br/>Redux</p>      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Back-end**  | <p align="center"><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png" width="100" height="100" /><br/>NodeJs</p> | <p align="center"><img src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" width="100" height="100" /><br/>ExpressJS</p> | <p align="center"><img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png" width="100" height="100" /><br/>MongoDB</p> | <p align="center"><img src="https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png" width="100" height="100" /><br/>Jest</p> |
 
-### `npm run build`
+## 🚀 Quick start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start developing locally.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Step 1: Download Node.js and MongoDB
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Download: [MongoDB](https://www.mongodb.com/try/download/community)
+Download: [Node.js](https://nodejs.org/en/)
 
-### `npm run eject`
+### Step 2: Clone the repo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Fork the repository then clone it locally by doing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+git clone https://github.com/Jenil-Vekaria/Trackit.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 2: Install Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd into the client and server directory, and install the dependencies
 
-## Learn More
+```sh
+cd client & npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+cd server & npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Step 3: Setup .env
 
-### Code Splitting
+To run the server you will also need to provide the `.env` variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- create a new file <b>.env</b> in the root
+- open [.env.EXAMPLE](./server/.env.EXAMPLE)
+- copy the contents and paste it to the .env with valid keys
 
-### Analyzing the Bundle Size
+### Step 4: Seed database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Make the following POST request to seed the database (Only can run this in `development` or `testing` environment)
 
-### Making a Progressive Web App
+```sh
+http://localhost:5000/test/populate
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##### Login Info
 
-### Advanced Configuration
+| Email                        | Password | Role Type       |
+| ---------------------------- | -------- | --------------- |
+| james.smith@bugtracker.com   | password | Admin           |
+| michael.smith@bugtracker.com | password | Developer       |
+| robert.smith@bugtracker.com  | password | Project Manager |
+| maria.garcia@bugtracker.com  | password | Submitter       |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### You are all setup!
 
-### Deployment
+Run client application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```sh
+npm start
+```
 
-### `npm run build` fails to minify
+Run server application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+nodemon server.js
+```
+
+### Give a ⭐, if you liked the project
+
+## 📸 Screenshots
+
+<div>
+  <h3>Login</h3>
+  <p>Log into the application with your credentials. If you don't have an account, click <strong>Sign Up</strong> to create a new account. Once you have logged in, you will be directed to projects page</p>
+  <img src="./screenshots/login.png"/>
+</div>
+
+<div>
+  <h3>View All Projects</h3>
+  <p>You will find all the projects you have created or belong to. You can also search and sort the projects. Click on <b>Add Project</b> to create new project</p>
+  <em><b>If your permissions doesn't allow you to manage project, "Add Project" will not be displayed</b></em>
+  <img src="./screenshots/all_projects.png"/>
+</div>
+
+<div>
+  <h3>Add Project</h3>
+  <p>Enter your project information here (Title and description)</p>
+  <img src="./screenshots/add_project.png"/>
+</div>
+
+<div>
+  <h3>Add Project (Contributor)</h3>
+  <p>Select all the project contributors. You will also see what type of role the user belong to.</p>
+  <img src="./screenshots/add_project_contributors.png"/>
+</div>
+
+<div>
+  <h3>View Project Info</h3>
+  <p>Once you have created your project, you will see all your project tickets (intially none). You create new tickets, view project info and edit exisiting ticket.</p>
+   <em><b>If your permissions doesn't allow you to manage tickets, "Add Ticket" will not be displayed</b></em>
+  <img src="./screenshots/view_project.png"/>
+</div>
+
+<div>
+  <h3>Project Overview</h3>
+  <p>Click on <b>Overview</b> to see the project statistics</p>
+  <img src="./screenshots/project_overview.png"/>
+</div>
+
+<div>
+  <h3>View Ticket Info</h3>
+  <p>Click on the existing ticket, you can edit the ticket info, add comment or update the ticket assignee</p>
+  <em><b>If your permission doesn't allow you to manage tickets, all the fields, comments, assigness will be disabled</b></em>
+  <img src="./screenshots/view_ticket.png"/>
+</div>
+
+<div>
+  <h3>View Ticket Comments</h3>
+  <p>Click on comments tab, you will see all the ticket comments and you can also comment on it.</p>
+  <em><b>If your permission doesn't allow you to manage comments, you will not be able to comment</b></em>
+  <img src="./screenshots/ticket_comments.png"/>
+</div>
+
+<div>
+  <h3>My Tickets</h3>
+  <p>Click on <b>Tickets</b> tab to see all your tickets regarless of what project it belongs to. Clicking on the ticket will allow you to edit it</p>
+  <img src="./screenshots/my_tickets.png"/>
+</div>
+
+<div>
+  <h3>Admin - Manage Users</h3>
+  <p>Click on <b>Admin</b> to manage the organization (Users, Roles, Custom Ticket Type)</p>
+  <p>Click on <b>Manage User</b> to manage all the users and their roles. Clicking on the user will allow you to update their role</p>
+  <em><b>This tab will only be displayed if you are the admin</b></em>
+  <img src="./screenshots/admin_manage_users.png"/>
+</div>
+
+<div>
+  <h3>Admin - Manage Roles</h3>
+  <p>Manage Roles tab will display all the roles and their respective permissions. To create custom role, click on <b>Add New Role</b></p>
+  <img src="./screenshots/admin_manage_roles.png"/>
+</div>
+
+<div>
+  <h3>Admin - Manage Roles (Add)</h3>
+  <p>You can create your custom role by giving a role name and selecting the types of allowed actions</p>
+  <img src="./screenshots/admin_create_role.png"/>
+</div>
+
+<div>
+  <h3>Admin - Manage Ticket Types</h3>
+  <p>You will see all the ticket types here. There are some pre-defined ticket types (Feature, Bug, Documentation, Support), but you may create custom ticket types by clicking on <b>Add New Ticket Type</b></p>
+  <img src="./screenshots/admin_manage_ticket_types.png"/>
+</div>
+
+<div>
+  <h3>Admin - Manage Ticket Types (Add)</h3>
+  <p>Create custom ticket type by giving ticket type name, selecting an icon, and the icon colour</p>
+  <img src="./screenshots/admin_create_ticket_types.png"/>
+</div>
+
+## Author
+
+- Github: [@Jenil-Vekara](https://github.com/Jenil-Vekaria)
+- Portfolio: [Jenil-Vekaria.netlify.app](https://jenil-vekaria.netlify.app/)
+- LinkedIn: [@JenilVekaria](https://www.linkedin.com/in/jenilvekaria/)
