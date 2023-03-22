@@ -200,8 +200,3 @@ nodemon server.js
   <img src="./screenshots/admin_create_ticket_types.png"/>
 </div>
 
-## Author
-
-- Github: [@Jenil-Vekara](https://github.com/Jenil-Vekaria)
-- Portfolio: [Jenil-Vekaria.netlify.app](https://jenil-vekaria.netlify.app/)
-- LinkedIn: [@JenilVekaria](https://www.linkedin.com/in/jenilvekaria/)
