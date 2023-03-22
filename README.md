@@ -1,8 +1,7 @@
 <!-- INTRO SECTION -->
 <br />
 <p align="center">
-    <img src="![Trackit_Plain ebb7ee6dfe788941454f](https://user-images.githubusercontent.com/76692190/226884229-c3194197-f6eb-4363-82fc-75a1593c432d.png)
-" alt="Trackit">
+    <img src="./screenshots/Trackit_Plain.ebb7ee6dfe788941454f.png/">
   
 
   <h3 align="center">Issue and Project Tracking System</h3>
