@@ -1,10 +1,8 @@
 <!-- INTRO SECTION -->
 <br />
 <p align="center">
- ![image](https://user-images.githubusercontent.com/76692190/226882897-f8b09644-9430-4a3b-ad7c-e811521c7942.png)
-
-    
-  </a>
+    <img src="http://localhost:3000/static/media/Trackit_Plain.ebb7ee6dfe788941454f.png" alt="Trackit">
+  
 
   <h3 align="center">Issue and Project Tracking System</h3>
 
@@ -53,7 +51,7 @@ Download: [Node.js](https://nodejs.org/en/)
 Fork the repository then clone it locally by doing
 
 ```sh
-git clone https://github.com/suryavdotcom/Trackit.git
+git clone https://github.com/Jenil-Vekaria/Trackit.git
 ```
 
 ### Step 2: Install Dependencies
@@ -114,45 +112,46 @@ nodemon server.js
 <div>
   <h3>Login</h3>
   <p>Log into the application with your credentials. If you don't have an account, click <strong>Sign Up</strong> to create a new account. Once you have logged in, you will be directed to projects page</p>
- 
+  <img src="./screenshots/login.png"/>
 </div>
 
 <div>
   <h3>View All Projects</h3>
   <p>You will find all the projects you have created or belong to. You can also search and sort the projects. Click on <b>Add Project</b> to create new project</p>
   <em><b>If your permissions doesn't allow you to manage project, "Add Project" will not be displayed</b></em>
- 
+  <img src="./screenshots/all_projects.png"/>
 </div>
 
 <div>
   <h3>Add Project</h3>
   <p>Enter your project information here (Title and description)</p>
-  
+  <img src="./screenshots/add_project.png"/>
 </div>
 
 <div>
   <h3>Add Project (Contributor)</h3>
   <p>Select all the project contributors. You will also see what type of role the user belong to.</p>
-
+  <img src="./screenshots/add_project_contributors.png"/>
 </div>
 
 <div>
   <h3>View Project Info</h3>
   <p>Once you have created your project, you will see all your project tickets (intially none). You create new tickets, view project info and edit exisiting ticket.</p>
    <em><b>If your permissions doesn't allow you to manage tickets, "Add Ticket" will not be displayed</b></em>
-  </div>
+  <img src="./screenshots/view_project.png"/>
+</div>
 
 <div>
   <h3>Project Overview</h3>
   <p>Click on <b>Overview</b> to see the project statistics</p>
-
+  <img src="./screenshots/project_overview.png"/>
 </div>
 
 <div>
   <h3>View Ticket Info</h3>
   <p>Click on the existing ticket, you can edit the ticket info, add comment or update the ticket assignee</p>
   <em><b>If your permission doesn't allow you to manage tickets, all the fields, comments, assigness will be disabled</b></em>
- 
+  <img src="./screenshots/view_ticket.png"/>
 </div>
 
 <div>
@@ -165,7 +164,7 @@ nodemon server.js
 <div>
   <h3>My Tickets</h3>
   <p>Click on <b>Tickets</b> tab to see all your tickets regarless of what project it belongs to. Clicking on the ticket will allow you to edit it</p>
- 
+  <img src="./screenshots/my_tickets.png"/>
 </div>
 
 <div>
@@ -173,7 +172,7 @@ nodemon server.js
   <p>Click on <b>Admin</b> to manage the organization (Users, Roles, Custom Ticket Type)</p>
   <p>Click on <b>Manage User</b> to manage all the users and their roles. Clicking on the user will allow you to update their role</p>
   <em><b>This tab will only be displayed if you are the admin</b></em>
- 
+  <img src="./screenshots/admin_manage_users.png"/>
 </div>
 
 <div>
@@ -185,33 +184,18 @@ nodemon server.js
 <div>
   <h3>Admin - Manage Roles (Add)</h3>
   <p>You can create your custom role by giving a role name and selecting the types of allowed actions</p>
-
+  <img src="./screenshots/admin_create_role.png"/>
 </div>
 
 <div>
   <h3>Admin - Manage Ticket Types</h3>
   <p>You will see all the ticket types here. There are some pre-defined ticket types (Feature, Bug, Documentation, Support), but you may create custom ticket types by clicking on <b>Add New Ticket Type</b></p>
-
+  <img src="./screenshots/admin_manage_ticket_types.png"/>
 </div>
 
 <div>
   <h3>Admin - Manage Ticket Types (Add)</h3>
   <p>Create custom ticket type by giving ticket type name, selecting an icon, and the icon colour</p>
-![add_project](https://user-images.githubusercontent.com/76692190/226882961-1a756622-1334-46fc-b2d5-90dbba868454.png)
-![add_project_contributors](https://user-images.githubusercontent.com/76692190/226882973-2a35eb4f-c07a-4bb5-9b3d-3c247ac4af32.png)
-![admin_create_role](https://user-images.githubusercontent.com/76692190/226882982-f4df6fc5-cb8f-4ed6-ab9b-d07ed8e96801.png)
-![admin_create_ticket_types](https://user-images.githubusercontent.com/76692190/226882991-9cc5f75f-c403-4f45-9940-e314cac83bb6.png)
-![admin_manage_roles](https://user-images.githubusercontent.com/76692190/226882996-ddaeb7e1-92ca-4796-84ba-c504f6432829.png)
-![admin_manage_ticket_types](https://user-images.githubusercontent.com/76692190/226883001-4f7fb541-f4d3-4d54-9604-2199eb9c7125.png)
-![admin_manage_users](https://user-images.githubusercontent.com/76692190/226883004-caa36323-6c19-497c-8665-5adf9f8bb3f6.png)
-![all_projects](https://user-images.githubusercontent.com/76692190/226883010-1388e235-29df-4d96-a16c-452ec2c0f2f7.png)
-![login](https://user-images.githubusercontent.com/76692190/226883025-953ebf6f-6d14-418a-a3b1-a3d1844b3826.png)
-![my_tickets](https://user-images.githubusercontent.com/76692190/226883032-9d6ad471-14a2-42ea-8a59-1973a3b9d6ee.png)
-![project_overview](https://user-images.githubusercontent.com/76692190/226883043-8253a13b-ebf7-4fb5-bf03-246fb1bf8997.png)
-![ticket_comments](https://user-images.githubusercontent.com/76692190/226883052-1ecde01a-0e9c-4997-8e5e-ece7e23e064c.png)
-![view_project](https://user-images.githubusercontent.com/76692190/226883063-c3ee551f-8822-43df-9156-2da4dc1d267e.png)
-![view_ticket](https://user-images.githubusercontent.com/76692190/226883073-efa891cb-8ac6-49f0-abcd-5418cf5e1659.png)
-
-
- 
+  <img src="./screenshots/admin_create_ticket_types.png"/>
 </div>
+
