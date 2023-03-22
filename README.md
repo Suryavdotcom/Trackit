@@ -1,7 +1,8 @@
 <!-- INTRO SECTION -->
 <br />
 <p align="center">
-    <img src="http://localhost:3000/static/media/Trackit_Plain.ebb7ee6dfe788941454f.png" alt="Trackit">
+    <img src="![Trackit_Plain ebb7ee6dfe788941454f](https://user-images.githubusercontent.com/76692190/226884229-c3194197-f6eb-4363-82fc-75a1593c432d.png)
+" alt="Trackit">
   
 
   <h3 align="center">Issue and Project Tracking System</h3>
@@ -51,7 +52,7 @@ Download: [Node.js](https://nodejs.org/en/)
 Fork the repository then clone it locally by doing
 
 ```sh
-git clone https://github.com/Jenil-Vekaria/Trackit.git
+git clone https://github.com/Suryavdotcom/Trackit.git
 ```
 
 ### Step 2: Install Dependencies
